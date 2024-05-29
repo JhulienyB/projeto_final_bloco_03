@@ -44,7 +44,7 @@ function DeletarCategoria() {
     }
 
     function retornar() {
-        // navigate("/categorias")
+        navigate("/categorias")
     }
 
     return (
@@ -59,8 +59,10 @@ function DeletarCategoria() {
                 </header>
                 <p className='p-8 text-3xl bg-white h-full'>{categoria.nome}</p>
                 <div className="flex">
-                    <button className='text-slate-100 bg-red-400 hover:bg-red-600 w-full py-2'
-                        onClick={retornar}>
+                    <button
+                        className='text-slate-100 bg-red-400 hover:bg-red-600 w-full py-2'
+                        onClick={retornar}
+                    >
                         Não
                     </button>
                     <button

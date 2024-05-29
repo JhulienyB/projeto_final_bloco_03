@@ -1,4 +1,4 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Categoria from "../../../models/Categoria";
 
 interface CardCategoriaProps {
@@ -11,7 +11,7 @@ function CardCategorias({categoria}: CardCategoriaProps) {
             <header className='py-2 px-6 bg-slate-700  text-white font-bold text-2xl'>Categoria</header>
             <p className='p-8 text-3xl bg-white h-full'>{categoria.nome}</p>
             <div className="flex">
-                {/* <Link to={`/editarcategoria/${categoria.id}`}
+                <Link to={`/editarcategoria/${categoria.id}`}
                     className='w-full text-slate-100 bg-teal-400 hover:bg-teal-700 
                         flex items-center justify-center py-2'>
                     <button>Editar</button>
@@ -21,7 +21,7 @@ function CardCategorias({categoria}: CardCategoriaProps) {
                     className='text-slate-100 bg-red-400 hover:bg-red-700 w-full 
                         flex items-center justify-center'>
                     <button>Deletar</button>
-                </Link> */}
+                </Link>
             </div>
         </div>
     );

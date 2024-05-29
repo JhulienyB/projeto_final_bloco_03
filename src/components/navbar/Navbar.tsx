@@ -8,9 +8,9 @@ function Navbar() {
 
         <div className='w-full  bg-slate-800 text-white flex justify-center py-4'>
             <div className="container flex justify-between text-lg">
-                {/* <Link to='/home'>
+                <Link to='/home'>
                     <img src={navLogo} alt="Logo" className='w-60'/>
-                </Link> */}
+                </Link>
 
                 <div className="flex-1 flex justify-center items-center relative w-30 text-black">
                         <form>
@@ -28,8 +28,8 @@ function Navbar() {
                     </div>
 
                 <div className='flex gap-4 py-4'>
-                    {/* <Link to='/categorias' className='hover:underline'>Categorias</Link>
-                    <Link to='/cadcategoria' className='hover:underline'>Cadastrar Categoria</Link> */}
+                    <Link to='/categorias' className='hover:underline'>Categorias</Link>
+                    <Link to='/cadcategoria' className='hover:underline'>Cadastrar Categoria</Link>
                     <User size={32} weight='bold' />
                     <ShoppingCart size={32} weight='bold' />
                 </div>
